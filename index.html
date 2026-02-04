@@ -1,15 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essor Conception – Prévention Incendie & Formation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="#hero"><img src="assets/logo.png" alt="Essor Conception" /></a>
+      <button class="menu-btn" type="button" aria-label="Menu" id="menuBtn">☰</button>
+      <nav id="nav">
+        <a href="#pillars">Services</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#targets">Clients</a>
+        <button type="button" class="cta" id="contactBtn">Être rappelé</button>
+      </nav>
+    </div>
+  </header>
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Site Web Prévention Incendie</title>
-    </head>
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1612466505848-c1c632fbfeba?w=1080&q=80" alt="Pompier en action" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>L'expertise sans la vente forcée</h1>
+        <p class="sub">Prévention. Incendie. Secours.<br />Conseil réglementaire neutre et formations immersives.</p>
+        <a href="#contact" class="btn" id="heroContact">Être rappelé gratuitement</a>
+      </div>
+    </div>
+    <div class="pillars-strip">
+      <div class="pillars-inner">
+        <div class="pillars-grid">
+          <div class="pillar">
+            <span class="pillar-icon">🛡️</span>
+            <div>
+              <h3>Audit Neutre</h3>
+              <p>Une expertise technique, pas commerciale.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">🎓</span>
+            <div>
+              <h3>Formation Réaliste</h3>
+              <p>Pédagogie active, VR, mises en situation.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">🤝</span>
+            <div>
+              <h3>Appui Décisionnel</h3>
+              <p>L'allié des Élus et Chefs d'entreprise.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+  <section id="pillars">
+    <div class="section-hero">
+      <img src="https://images.unsplash.com/photo-1766069211780-ce28c0ba20d9?w=1080&q=80" alt="Formation sécurité" />
+      <div class="overlay overlay-grad"></div>
+      <div class="content">
+        <div class="container">
+          <div style="max-width: 48rem;">
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+              <span style="font-size: 3rem;">🛡️</span>
+              <h2 style="color: #fff;">Audit & Conseil</h2>
+            </div>
+            <div class="quote-box">
+              <p style="font-size: 1.5rem; margin-bottom: 0.5rem;">Ne subissez plus la réglementation, maîtrisez-la.</p>
+              <p><strong>Le Concept :</strong> Nous sommes votre Tiers de Confiance. Contrairement aux vendeurs de matériel, notre audit est désintéressé. Si vous n'avez pas besoin d'un équipement, nous vous le dirons.</p>
+            </div>
+            <div class="two-cols">
+              <div class="card">
+                <h3>Pour les Maires & Élus</h3>
+                <ul>
+                  <li>Rédaction et animation des PCS</li>
+                  <li>Gestion ERP dès la 5ème catégorie</li>
+                  <li>Formation événements communaux</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h3>Pour les Chefs d'Entreprise</h3>
+                <ul>
+                  <li>Rédaction du DUERP</li>
+                  <li>Analyse des accidents du travail</li>
+                  <li>Commissions de sécurité</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-dark formations">
+      <div class="container">
+        <div class="intro">
+          <span class="intro-icon">🎓</span>
+          <div>
+            <h2>Formations</h2>
+            <p>Des formations pour agir, pas pour dormir.</p>
+          </div>
+        </div>
+        <div class="strip">
+          <p>L'actualité nous rappelle chaque jour que la formation sauve des vies. Fini la théorie ennuyeuse : place à la réalité virtuelle, aux cas concrets et à l'action.</p>
+        </div>
+        <div class="formations-grid">
+          <div class="card"><span class="emoji">🔥</span><h3>Incendie</h3><p>Extincteurs sur feux réels ou Réalité Virtuelle (VR) pour vous mettre en situation dans vos locaux.</p></div>
+          <div class="card"><span class="emoji">⛑️</span><h3>Secours</h3><p>SST (Sauveteur Secouriste du Travail), Gestes qui sauvent.</p></div>
+          <div class="card"><span class="emoji">🚨</span><h3>Risques Spéciaux</h3><p>Menace Attentats, Catastrophes Naturelles.</p></div>
+          <div class="card"><span class="emoji">🧠</span><h3>Pédagogie Ludique</h3><p>Escape Games sécurité, Formations pour les écoles et associations.</p></div>
+          <div class="card"><span class="emoji">👨‍🏫</span><h3>Formation de Formateurs</h3><p>Transmettre la pédagogie et former les futurs formateurs.</p></div>
+          <div class="card"><span class="emoji">🎯</span><h3>Formations sur-mesure</h3><p>Organisateurs d'événements, élus, exploitants agricoles...</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <div class="section-hero">
+      <img src="https://images.unsplash.com/photo-1734445558870-72ee57ee3930?w=1080&q=80" alt="Équipe secours" />
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="container">
+          <div class="content-inner" style="max-width: 36rem;">
+            <span style="font-size: 3rem; color: #f59e0b;">🔥</span>
+            <h2 style="margin-top: 1rem;">20 ans d'expérience opérationnelle</h2>
+            <p>Une culture du secours forgée par deux décennies d'engagement Sapeur-Pompier et de formateur incendie. Une connaissance intime du feu et de l'urgence, mais également de la gestion de crise réelle. Notre structure s'appuie sur une expérience concrète : la responsabilité régulière de dispositifs de sécurité de grande envergure en Occitanie, encadrant plusieurs dizaines de milliers de personnes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="section-gray">
+        <div>
+          <span style="font-size: 3rem; color: #f59e0b;">✓</span>
+          <h2 style="margin-top: 1rem;">Expertise en Prévention & Analyse des Risques</h2>
+          <p style="font-size: 1.25rem; line-height: 1.6; color: #d1d5db;">Parce que le meilleur accident est celui qui n'arrive pas. Nous déployons une méthodologie rigoureuse pour l'analyse des risques professionnels et sociétaux. De la rédaction du Document Unique (DUERP) pour les entreprises à l'élaboration et animation des Plans Communaux de Sauvegarde (PCS) pour les mairies, notre approche transforme la contrainte administrative en véritable bouclier pour vos équipes et vos administrés.</p>
+        </div>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1768333568805-97e6e6f88267?w=1080&q=80" alt="Formation équipe" />
+      </div>
+    </div>
+
+    <div class="split reverse">
+      <div class="order-2"><img src="https://images.unsplash.com/photo-1713689824343-77d2f99e19b8?w=1080&q=80" alt="Instructeur" /></div>
+      <div class="section-amber order-1">
+        <div>
+          <span style="font-size: 3rem;">🏆</span>
+          <h2 style="margin-top: 1rem; color: #fff;">Haute Qualification Réglementaire</h2>
+          <h3 style="font-size: 1.75rem;">SSIAP 3</h3>
+          <p style="font-size: 1.25rem; line-height: 1.6;">Le niveau d'expertise SSIAP 3 (Chef de Service Sécurité Incendie) pour auditer, conseiller et garantir la conformité des ERP les plus complexes et des Immeubles de Grande Hauteur.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-dark" style="padding: 4rem 1rem; text-align: center;">
+      <div class="container-narrow">
+        <span style="font-size: 3rem; color: #f59e0b;">📈</span>
+        <h2 style="margin-top: 1rem;">La Connaissance du Marché</h2>
+        <p style="font-size: 1.25rem; color: #d1d5db; line-height: 1.6;">Avoir évolué au cœur du secteur de la protection incendie nous permet aujourd'hui de décrypter les devis que vous recevez. Nous identifions immédiatement ce qui est nécessaire de ce qui est superflu.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="targets">
+    <div class="section-dark targets-header">
+      <h2>Nos Clients</h2>
+      <p>Des solutions adaptées à chaque type d'organisation</p>
+    </div>
+
+    <div class="target-block">
+      <div class="text section-gray">
+        <div>
+          <span style="font-size: 4rem; color: #f59e0b;">🏛️</span>
+          <h3 style="font-size: 2rem; margin-top: 1rem;">Collectivités</h3>
+          <ul>
+            <li>Plans Communaux de Sauvegarde</li>
+            <li>Gestion ERP 5ème catégorie</li>
+            <li>Formation élus & agents</li>
+            <li>Événements communaux</li>
+            <li>Accompagnement réglementaire</li>
+          </ul>
+        </div>
+      </div>
+      <div><img src="https://images.unsplash.com/photo-1626048060272-ed93e6d53303?w=1080&q=80" alt="Réunion sécurité" /></div>
+    </div>
+
+    <div class="target-block">
+      <div class="img-first"><img src="https://images.unsplash.com/photo-1575867094974-9e16b6f55360?w=1080&q=80" alt="Formation pompier" /></div>
+      <div class="text section-amber">
+        <div>
+          <span style="font-size: 4rem;">🏭</span>
+          <h3 style="font-size: 2rem; margin-top: 1rem;">Entreprises</h3>
+          <ul>
+            <li>Rédaction DUERP</li>
+            <li>Formations SST & incendie</li>
+            <li>Audit sécurité</li>
+            <li>Commissions de sécurité</li>
+            <li>Conseils équipements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="target-block">
+      <div class="text section-gray">
+        <div>
+          <span style="font-size: 4rem; color: #f59e0b;">👥</span>
+          <h3 style="font-size: 2rem; margin-top: 1rem;">Associations</h3>
+          <ul>
+            <li>Formations adaptées</li>
+            <li>Gestion événements</li>
+            <li>Escape games sécurité</li>
+            <li>Sensibilisation jeunesse</li>
+            <li>Conseil bénévole</li>
+          </ul>
+        </div>
+      </div>
+      <div class="img-first"><img src="https://images.unsplash.com/photo-1690973692388-239878450c7b?w=1080&q=80" alt="Audit sécurité" /></div>
+    </div>
+
+    <div class="target-block">
+      <div><img src="https://images.unsplash.com/photo-1758521960456-c876c573e0b6?w=1080&q=80" alt="Formation VR" /></div>
+      <div class="text section-dark">
+        <div>
+          <span style="font-size: 4rem; color: #f59e0b;">👤</span>
+          <h3 style="font-size: 2rem; margin-top: 1rem;">Particuliers</h3>
+          <ul>
+            <li>Gestes qui sauvent</li>
+            <li>Formation incendie domestique</li>
+            <li>Conseils équipement maison</li>
+            <li>Exploitants agricoles</li>
+            <li>Formation personnalisée</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-amber cta-section" id="contact">
+      <h3>Pourquoi nous faire confiance ?</h3>
+      <p>L'actualité nous rappelle régulièrement l'importance de la formation, de l'information et surtout du respect de la réglementation incendie, principalement dans les ERP. La réglementation française fait partie des plus strictes et des plus complexes au monde. Nous sommes là pour vous aider à y voir clair et ne pas vous laisser abuser. Ce qui est efficace et obligatoire oui, mais pas plus.</p>
+      <button type="button" class="btn cta-section btn" id="ctaContact">Discutons de votre projet</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/logo.png" alt="Essor Conception" />
+        <p style="color: #9ca3af; margin-bottom: 0.5rem;">Prévention - Formation - Conseil</p>
+        <p style="color: #6b7280;">L'expertise sans la vente forcée</p>
+      </div>
+      <div>
+        <h3>Nos Services</h3>
+        <ul>
+          <li>Audit & Conseil</li>
+          <li>Formations Incendie</li>
+          <li>Formations Secours</li>
+          <li>DUERP & PCS</li>
+          <li>Formation VR</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p style="color: #9ca3af;">Région Occitanie</p>
+        <p style="color: #9ca3af;">Expert disponible sous 24h</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Essor Conception. Tous droits réservés.</p>
+      <p>Sapeur-Pompier • SSIAP 3 • Formateur de formateurs</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="contactModal">
+    <div class="modal-box">
+      <h3>Être rappelé</h3>
+      <p>Contactez-nous : Région Occitanie – Expert disponible sous 24h.</p>
+      <p>Vous pouvez nous joindre par téléphone ou par email pour toute demande.</p>
+      <button type="button" class="modal-close" id="modalClose">Fermer</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    var nav = document.getElementById('nav');
+    var menuBtn = document.getElementById('menuBtn');
+    menuBtn.onclick = function() { nav.classList.toggle('open'); };
+    function openModal() { document.getElementById('contactModal').classList.add('open'); }
+    function closeModal() { document.getElementById('contactModal').classList.remove('open'); }
+    document.getElementById('contactBtn').onclick = openModal;
+    document.getElementById('heroContact').onclick = openModal;
+    document.getElementById('ctaContact').onclick = openModal;
+    document.getElementById('modalClose').onclick = closeModal;
+    document.getElementById('contactModal').onclick = function(e) { if (e.target === this) closeModal(); };
+  </script>
+</body>
+</html>

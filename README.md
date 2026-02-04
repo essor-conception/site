@@ -1,11 +1,15 @@
+# Essor Conception
 
-  # Site Web Prévention Incendie
+Site vitrine – Prévention Incendie, Formation & Conseil (Région Occitanie).
 
-  This is a code bundle for Site Web Prévention Incendie. The original project is available at https://www.figma.com/design/Pq5PBx1Y4fMMIqalp7haAF/Site-Web-Pr%C3%A9vention-Incendie.
+- **En ligne :** [essor-conception.github.io/site](https://essor-conception.github.io/site/)
+- HTML/CSS statique, pas de build.
 
-  ## Running the code
+## Déploiement sur GitHub Pages
 
-  Run `npm i` to install the dependencies.
+```bash
+npm install
+npm run deploy
+```
 
-  Run `npm run dev` to start the development server.
-  
+Puis dans le dépôt GitHub : **Settings → Pages** → Source **Deploy from a branch** → branche **gh-pages** → dossier **/ (root)**.
