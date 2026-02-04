@@ -1,6 +1,6 @@
 /* Essor Conception - Site statique */
 * { box-sizing: border-box; }
-body { margin: 0; font-family: system-ui, -apple-system, sans-serif; color: #111; }
+body { margin: 0; font-family: "Playfair Display", serif; color: #111; }
 img { max-width: 100%; height: auto; display: block; }
 
 /* Header */
@@ -16,7 +16,7 @@ img { max-width: 100%; height: auto; display: block; }
   display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
   gap: 1rem; padding-top: 0.75rem; padding-bottom: 0.75rem;
 }
-.header img { height: 3.5rem; }
+.header img { height: 5rem; }
 nav { display: flex; align-items: center; gap: 2rem; }
 nav a, nav button {
   background: none; border: none; font-size: 0.75rem; letter-spacing: 0.05em;
