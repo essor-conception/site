@@ -166,12 +166,35 @@ h3 { font-size: 1.5rem; margin: 0 0 1rem; }
 .footer li:hover { color: #f59e0b; cursor: default; }
 .footer-bottom { border-top: 1px solid #1f2937; padding-top: 2rem; max-width: 80rem; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; color: #6b7280; font-size: 0.875rem; }
 
-/* Contact modal (simple) */
+/* Contact modal – formulaire Être rappelé */
 .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.6); z-index: 100; align-items: center; justify-content: center; padding: 1rem; }
 .modal.open { display: flex; }
-.modal-box { background: #fff; padding: 2rem; max-width: 28rem; width: 100%; }
-.modal-box h3 { margin-top: 0; }
-.modal-close { margin-top: 1rem; background: #111; color: #fff; border: none; padding: 0.5rem 1rem; cursor: pointer; }
+.modal-box { background: #fff; padding: 2rem; max-width: 32rem; width: 100%; max-height: 90vh; overflow-y: auto; }
+.modal-box h3 { margin-top: 0; margin-bottom: 0.5rem; }
+.modal-intro { margin: 0 0 1.25rem; color: #4b5563; font-size: 0.9375rem; }
+.modal-close { background: #6b7280; color: #fff; border: none; padding: 0.5rem 1rem; cursor: pointer; font-family: inherit; font-size: 0.875rem; }
+.modal-close:hover { background: #4b5563; }
+
+.callback-form label { display: block; margin-bottom: 0.25rem; font-size: 0.875rem; font-weight: 500; color: #111; }
+.callback-form label .required { color: #b45309; }
+.callback-form input,
+.callback-form select {
+  width: 100%; padding: 0.5rem 0.75rem; margin-bottom: 1rem;
+  font-family: inherit; font-size: 1rem; border: 1px solid #d1d5db; border-radius: 0;
+}
+.callback-form input:focus,
+.callback-form select:focus {
+  outline: none; border-color: #b45309; box-shadow: 0 0 0 2px rgba(180,83,9,.2);
+}
+.callback-form input::placeholder { color: #9ca3af; }
+.callback-form select { cursor: pointer; background: #fff; }
+
+.form-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; }
+.btn-submit {
+  background: #b45309; color: #fff; border: none; padding: 0.625rem 1.25rem;
+  font-family: inherit; font-size: 0.9375rem; cursor: pointer;
+}
+.btn-submit:hover { background: #92420e; }
 
 /* Smooth scroll */
 html { scroll-behavior: smooth; }

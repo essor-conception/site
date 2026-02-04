@@ -289,9 +289,44 @@
   <div class="modal" id="contactModal">
     <div class="modal-box">
       <h3>Être rappelé</h3>
-      <p>Contactez-nous : Région Occitanie – Expert disponible sous 24h.</p>
-      <p>Vous pouvez nous joindre par téléphone ou par email pour toute demande.</p>
-      <button type="button" class="modal-close" id="modalClose">Fermer</button>
+      <p class="modal-intro">Renseignez vos coordonnées et nous vous rappellerons dans les meilleurs délais.</p>
+      <form id="callbackForm" class="callback-form">
+        <label for="callback-civilite">Civilité <span class="required">*</span></label>
+        <select id="callback-civilite" name="civilite" required>
+          <option value="">Choisir</option>
+          <option value="M.">M.</option>
+          <option value="Mme">Mme</option>
+        </select>
+
+        <label for="callback-nom">Nom <span class="required">*</span></label>
+        <input type="text" id="callback-nom" name="nom" required placeholder="Votre nom" />
+
+        <label for="callback-fonction">Fonction</label>
+        <input type="text" id="callback-fonction" name="fonction" placeholder="Ex. Responsable sécurité" />
+
+        <label for="callback-jour">Jour de rappel souhaité <span class="required">*</span></label>
+        <input type="date" id="callback-jour" name="jour" required />
+
+        <label for="callback-creneau">Plage horaire de rappel <span class="required">*</span></label>
+        <select id="callback-creneau" name="creneau" required>
+          <option value="">Choisir un créneau</option>
+          <option value="9h-12h">9h – 12h</option>
+          <option value="12h-14h">12h – 14h</option>
+          <option value="14h-18h">14h – 18h</option>
+          <option value="18h-20h">18h – 20h</option>
+        </select>
+
+        <label for="callback-email">Email <span class="required">*</span></label>
+        <input type="email" id="callback-email" name="email" required placeholder="votre@email.fr" />
+
+        <label for="callback-tel">Téléphone <span class="required">*</span></label>
+        <input type="tel" id="callback-tel" name="telephone" required placeholder="06 12 34 56 78" />
+
+        <div class="form-actions">
+          <button type="submit" class="btn-submit">Envoyer la demande</button>
+          <button type="button" class="modal-close" id="modalClose">Fermer</button>
+        </div>
+      </form>
     </div>
   </div>
 
@@ -307,6 +342,12 @@
     document.getElementById('ctaContact').onclick = openModal;
     document.getElementById('modalClose').onclick = closeModal;
     document.getElementById('contactModal').onclick = function(e) { if (e.target === this) closeModal(); };
+    document.getElementById('callbackForm').onsubmit = function(e) {
+      e.preventDefault();
+      alert('Merci pour votre demande. Nous vous rappellerons dans les meilleurs délais.');
+      closeModal();
+      this.reset();
+    };
   </script>
 </body>
 </html>
