@@ -94,11 +94,15 @@ h3 { font-size: 1.5rem; margin: 0 0 1rem; }
 .section-hero .content-inner { max-width: 48rem; color: #fff; }
 .section-hero .content-inner p { font-size: 1.25rem; line-height: 1.6; }
 .quote-box {
-  background: rgba(255,255,255,.1); backdrop-filter: blur(4px);
+  background: rgba(255,255,255,.5); backdrop-filter: blur(4px);
   border-left: 4px solid #b45309; padding: 2rem; margin: 2rem 0;
 }
 .quote-box p { margin: 0 0 0.5rem; }
 .two-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+/* Encarts Maires & Élus / Chefs d'Entreprise : même fond blur + blanc que la quote-box */
+.section-hero .two-cols .card {
+  background: rgba(255,255,255,.5); backdrop-filter: blur(4px);
+}
 .card { background: rgba(255,255,255,.95); padding: 2rem; border-left: 4px solid #b45309; color: #111; }
 .card h3 { margin-bottom: 1rem; }
 .card ul { margin: 0; padding-left: 1rem; }
