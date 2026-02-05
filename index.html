@@ -12,13 +12,17 @@
 <body>
   <header class="header">
     <div class="header-inner">
-      <a href="#hero"><img src="assets/logo.png" alt="Essor Conception" /></a>
+      <div class="header-brand">
+        <a href="#hero"><img src="assets/logo.png" alt="Essor Conception" /></a>
+        <span class="baseline">Votre partenaire de confiance</span>
+      </div>
       <button class="menu-btn" type="button" aria-label="Menu" id="menuBtn">☰</button>
       <nav id="nav">
         <a href="#hero">Accueil</a>
-        <a href="#pillars">Formations</a>
+        <a href="#audit">Audit & Conseil</a>
         <a href="#collectivites">Collectivités</a>
         <a href="#entreprises">Entreprises</a>
+        <a href="#pillars">Formations</a>
         <button type="button" class="cta" id="contactBtn">Être rappelé</button>
       </nav>
     </div>
@@ -31,7 +35,7 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-text">
-        <h1>Votre partenaire confiance en sécurité incendie</h1>
+        <h1>Votre conseiller prévention indépendant</h1>
         <p class="sub">Prévention. Incendie. Secours.<br />Conseil réglementaire neutre et formations immersives.</p>
         <a href="#contact" class="btn" id="heroContact">Être rappelé gratuitement</a>
       </div>
@@ -65,17 +69,14 @@
     </div>
   </section>
 
-  <section id="pillars">
+  <section id="audit" class="section-audit">
     <div class="section-hero">
-      <img src="https://images.unsplash.com/photo-1766069211780-ce28c0ba20d9?w=1080&q=80" alt="Formation sécurité" />
+      <img src="assets/audit-conseil.png" alt="Audit & Conseil – Votre conseiller prévention indépendant" />
       <div class="overlay overlay-grad"></div>
       <div class="content">
         <div class="container">
           <div style="max-width: 48rem;">
-            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
-              <span style="font-size: 3rem;">🛡️</span>
-              <h2 style="color: #fff;">Audit & Conseil</h2>
-            </div>
+            <h2 class="section-hero-title">Audit & Conseil</h2>
             <div class="quote-box">
               <p style="font-size: 1.5rem; margin-bottom: 0.5rem;">Ne subissez plus la réglementation, maîtrisez-la.</p>
               <p><strong>Le Concept :</strong> Nous sommes votre Tiers de Confiance. Contrairement aux vendeurs de matériel, notre audit est désintéressé. Si vous n'avez pas besoin d'un équipement, nous vous le dirons.</p>
@@ -102,7 +103,76 @@
         </div>
       </div>
     </div>
+  </section>
 
+  <section id="targets">
+    <div class="target-block" id="collectivites">
+      <div class="text section-gray">
+        <div>
+          <h3 class="target-block-title">Collectivités</h3>
+          <ul>
+            <li>Plans Communaux de Sauvegarde</li>
+            <li>Gestion ERP 5ème catégorie</li>
+            <li>Formation élus & agents</li>
+            <li>Événements communaux</li>
+            <li>Accompagnement réglementaire</li>
+          </ul>
+        </div>
+      </div>
+      <div><img src="assets/maire-bar-essor.png" alt="Un maire devant un bar, conseillé par un expert Essor Conception" /></div>
+    </div>
+
+    <div class="section-dark collectivites-offres">
+      <div class="container">
+        <h2 class="collectivites-offres-title">Nos accompagnements pour les collectivités</h2>
+        <div class="collectivites-offres-grid">
+          <article class="collectivites-offre-card">
+            <h3>Audit et Mise en Conformité des Bâtiments Communaux</h3>
+            <p>Écoles, salles des fêtes, gymnases, mairies… Ces bâtiments sont des ERP soumis à une réglementation stricte. Nous vous accompagnons avec&nbsp;:</p>
+            <ul>
+              <li><strong>Diagnostic de sécurité</strong> : un état des lieux clair de vos équipements et locaux.</li>
+              <li><strong>Préparation aux Commissions de Sécurité</strong> : constitution des dossiers et préparation des locaux pour éviter les avis défavorables.</li>
+              <li><strong>Suivi des travaux</strong> : priorisation des mises en conformité selon l’urgence et le budget.</li>
+              <li><strong>Analyse de devis</strong> : décrypter les offres et choisir les prestations adaptées.</li>
+            </ul>
+          </article>
+          <article class="collectivites-offre-card">
+            <h3>Soutien au Tissu Économique Local (Commerces & Artisans)</h3>
+            <p>La sécurité ne doit pas freiner l’activité économique. Nous intervenons auprès des commerçants (bars, restaurants, petits commerces) pour les mettre en conformité sans mettre en péril leur activité&nbsp;:</p>
+            <ul>
+              <li><strong>Médiation technique</strong> : explication pédagogique des règles incendie aux gérants.</li>
+              <li><strong>Analyse de devis et recherche de prestations</strong> adaptées.</li>
+              <li><strong>Solutions pragmatiques</strong> : des réponses adaptées aux réalités du terrain et aux petits budgets.</li>
+            </ul>
+          </article>
+          <article class="collectivites-offre-card">
+            <h3>Expertise technique par un SSIAP 3 indépendant</h3>
+            <p>Pour sécuriser vos administrés et votre mandat. La sécurité est une obligation légale, pas une option. Drames en ERP, risques climatiques… le risque zéro n’existe pas.</p>
+            <p>En France, le Maire est responsable de la police des ERP, notamment ceux de 5<sup>e</sup> catégorie non visités par la commission de sécurité départementale.</p>
+            <p class="collectivites-offre-accroche">La réglementation est complexe et vous n’êtes pas expert. Nous sommes là pour vous épauler.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="target-block" id="entreprises">
+      <div class="img-first"><img src="https://images.unsplash.com/photo-1575867094974-9e16b6f55360?w=1080&q=80" alt="Formation pompier" /></div>
+      <div class="text section-amber">
+        <div>
+          <h3 class="target-block-title">Entreprises</h3>
+          <ul>
+            <li>Rédaction DUERP</li>
+            <li>Formations SST & incendie</li>
+            <li>Audit sécurité</li>
+            <li>Commissions de sécurité</li>
+            <li>Conseils équipements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pillars">
     <div class="section-dark formations">
       <div class="container">
         <div class="intro">
@@ -127,133 +197,33 @@
     </div>
   </section>
 
-  <section id="expertise">
-    <div class="section-hero">
-      <img src="https://images.unsplash.com/photo-1734445558870-72ee57ee3930?w=1080&q=80" alt="Équipe secours" />
-      <div class="overlay"></div>
-      <div class="content">
-        <div class="container">
-          <div class="content-inner" style="max-width: 36rem;">
-            <span style="font-size: 3rem; color: #f59e0b;">🔥</span>
-            <h2 style="margin-top: 1rem;">20 ans d'expérience opérationnelle</h2>
-            <p>Une culture du secours forgée par deux décennies d'engagement Sapeur-Pompier et de formateur incendie. Une connaissance intime du feu et de l'urgence, mais également de la gestion de crise réelle. Notre structure s'appuie sur une expérience concrète : la responsabilité régulière de dispositifs de sécurité de grande envergure en Occitanie, encadrant plusieurs dizaines de milliers de personnes.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="split">
-      <div class="section-gray">
-        <div>
-          <span style="font-size: 3rem; color: #f59e0b;">✓</span>
-          <h2 style="margin-top: 1rem;">Expertise en Prévention & Analyse des Risques</h2>
-          <p style="font-size: 1.25rem; line-height: 1.6; color: #d1d5db;">Parce que le meilleur accident est celui qui n'arrive pas. Nous déployons une méthodologie rigoureuse pour l'analyse des risques professionnels et sociétaux. De la rédaction du Document Unique (DUERP) pour les entreprises à l'élaboration et animation des Plans Communaux de Sauvegarde (PCS) pour les mairies, notre approche transforme la contrainte administrative en véritable bouclier pour vos équipes et vos administrés.</p>
-        </div>
-      </div>
-      <div>
-        <img src="https://images.unsplash.com/photo-1768333568805-97e6e6f88267?w=1080&q=80" alt="Formation équipe" />
-      </div>
-    </div>
-
-    <div class="split reverse">
-      <div class="order-2"><img src="https://images.unsplash.com/photo-1713689824343-77d2f99e19b8?w=1080&q=80" alt="Instructeur" /></div>
-      <div class="section-amber order-1">
-        <div>
-          <span style="font-size: 3rem;">🏆</span>
-          <h2 style="margin-top: 1rem; color: #fff;">Haute Qualification Réglementaire</h2>
-          <h3 style="font-size: 1.75rem;">SSIAP 3</h3>
-          <p style="font-size: 1.25rem; line-height: 1.6;">Le niveau d'expertise SSIAP 3 (Chef de Service Sécurité Incendie) pour auditer, conseiller et garantir la conformité des ERP les plus complexes et des Immeubles de Grande Hauteur.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-dark" style="padding: 4rem 1rem; text-align: center;">
-      <div class="container-narrow">
-        <span style="font-size: 3rem; color: #f59e0b;">📈</span>
-        <h2 style="margin-top: 1rem;">La Connaissance du Marché</h2>
-        <p style="font-size: 1.25rem; color: #d1d5db; line-height: 1.6;">Avoir évolué au cœur du secteur de la protection incendie nous permet aujourd'hui de décrypter les devis que vous recevez. Nous identifions immédiatement ce qui est nécessaire de ce qui est superflu.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="targets">
-    <div class="section-dark targets-header">
-      <h2>Nos Clients</h2>
-      <p>Des solutions adaptées à chaque type d'organisation</p>
-    </div>
-
-    <div class="target-block" id="collectivites">
-      <div class="text section-gray">
-        <div>
-          <span style="font-size: 4rem; color: #f59e0b;">🏛️</span>
-          <h3 style="font-size: 2rem; margin-top: 1rem;">Collectivités</h3>
-          <ul>
-            <li>Plans Communaux de Sauvegarde</li>
-            <li>Gestion ERP 5ème catégorie</li>
-            <li>Formation élus & agents</li>
-            <li>Événements communaux</li>
-            <li>Accompagnement réglementaire</li>
-          </ul>
-        </div>
-      </div>
-      <div><img src="https://images.unsplash.com/photo-1626048060272-ed93e6d53303?w=1080&q=80" alt="Réunion sécurité" /></div>
-    </div>
-
-    <div class="target-block" id="entreprises">
-      <div class="img-first"><img src="https://images.unsplash.com/photo-1575867094974-9e16b6f55360?w=1080&q=80" alt="Formation pompier" /></div>
-      <div class="text section-amber">
-        <div>
-          <span style="font-size: 4rem;">🏭</span>
-          <h3 style="font-size: 2rem; margin-top: 1rem;">Entreprises</h3>
-          <ul>
-            <li>Rédaction DUERP</li>
-            <li>Formations SST & incendie</li>
-            <li>Audit sécurité</li>
-            <li>Commissions de sécurité</li>
-            <li>Conseils équipements</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="target-block">
-      <div class="text section-gray">
-        <div>
-          <span style="font-size: 4rem; color: #f59e0b;">👥</span>
-          <h3 style="font-size: 2rem; margin-top: 1rem;">Associations</h3>
-          <ul>
-            <li>Formations adaptées</li>
-            <li>Gestion événements</li>
-            <li>Escape games sécurité</li>
-            <li>Sensibilisation jeunesse</li>
-            <li>Conseil bénévole</li>
-          </ul>
-        </div>
-      </div>
-      <div class="img-first"><img src="https://images.unsplash.com/photo-1690973692388-239878450c7b?w=1080&q=80" alt="Audit sécurité" /></div>
-    </div>
-
-    <div class="target-block">
-      <div><img src="https://images.unsplash.com/photo-1758521960456-c876c573e0b6?w=1080&q=80" alt="Formation VR" /></div>
-      <div class="text section-dark">
-        <div>
-          <span style="font-size: 4rem; color: #f59e0b;">👤</span>
-          <h3 style="font-size: 2rem; margin-top: 1rem;">Particuliers</h3>
-          <ul>
-            <li>Gestes qui sauvent</li>
-            <li>Formation incendie domestique</li>
-            <li>Conseils équipement maison</li>
-            <li>Exploitants agricoles</li>
-            <li>Formation personnalisée</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-amber cta-section" id="contact">
+  <div class="section-amber cta-section" id="contact">
       <h3>Pourquoi nous faire confiance ?</h3>
       <p>L'actualité nous rappelle régulièrement l'importance de la formation, de l'information et surtout du respect de la réglementation incendie, principalement dans les ERP. La réglementation française fait partie des plus strictes et des plus complexes au monde. Nous sommes là pour vous aider à y voir clair et ne pas vous laisser abuser. Ce qui est efficace et obligatoire oui, mais pas plus.</p>
       <button type="button" class="btn cta-section btn" id="ctaContact">Discutons de votre projet</button>
+  </div>
+
+  <section id="pourquoi-essor" class="section-dark pourquoi-essor pourquoi-essor-bottom">
+    <div class="container">
+      <h2 class="pourquoi-essor-title">Pourquoi choisir Essor Conception ?</h2>
+      <p class="pourquoi-essor-intro">Des atouts décisifs pour les collectivités.</p>
+      <div class="pourquoi-grid">
+        <article class="pourquoi-card">
+          <span class="pourquoi-num">1</span>
+          <h3>L'Indépendance Totale<br /><em>Votre budget protégé</em></h3>
+          <p>Contrairement aux sociétés de maintenance, nous ne vendons ni extincteurs, ni alarmes. Notre conseil est 100% neutre. Si un équipement est superflu, nous vous le dirons. Notre seul objectif : votre conformité et vos économies.</p>
+        </article>
+        <article class="pourquoi-card">
+          <span class="pourquoi-num">2</span>
+          <h3>Une Double Expertise Rare<br /><em>Terrain & Réglementation</em></h3>
+          <p>Nous allions la théorie du plus haut niveau de qualification incendie (SSIAP 3) à la réalité opérationnelle des secours (Sapeur-Pompier & Sécurité Civile). Nous savons comment le feu se comporte et comment les foules réagissent.</p>
+        </article>
+        <article class="pourquoi-card">
+          <span class="pourquoi-num">3</span>
+          <h3>L'Expérience<br /><em>Dispositifs de grandes envergures</em></h3>
+          <p>Avec plus de 10 ans d'expérience comme Responsable des Secours sur des regroupements de dizaines de milliers de personnes plusieurs fois par mois, nous savons gérer les flux et la sécurité à grande échelle. Nous adaptons cette rigueur « grand événement » à l'échelle de votre commune.</p>
+        </article>
+      </div>
     </div>
   </section>
 
@@ -262,7 +232,7 @@
       <div>
         <img src="assets/logo.png" alt="Essor Conception" />
         <p style="color: #9ca3af; margin-bottom: 0.5rem;">Prévention - Formation - Conseil</p>
-        <p style="color: #6b7280;">Votre partenaire confiance en sécurité incendie</p>
+        <p style="color: #6b7280;">Votre conseiller prévention indépendant</p>
       </div>
       <div>
         <h3>Nos Services</h3>
@@ -277,7 +247,6 @@
       <div>
         <h3>Contact</h3>
         <p style="color: #9ca3af;">Région Occitanie</p>
-        <p style="color: #9ca3af;">Expert disponible sous 24h</p>
       </div>
     </div>
     <div class="footer-bottom">
