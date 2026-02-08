@@ -56,13 +56,14 @@ img { max-width: 100%; height: auto; display: block; }
 }
 nav { display: flex; align-items: center; gap: 2rem; }
 nav a, nav button {
-  background: none; border: none; font-size: 0.75rem; letter-spacing: 0.05em;
+  background: none; border: none; font-size: 0.95rem; letter-spacing: 0.05em;
   text-transform: uppercase; color: var(--accent); cursor: pointer;
   font-family: inherit; padding: 0.5rem 0;
 }
 nav a:hover, nav button:hover { color: var(--accent-hover); }
 nav .cta {
-  background: var(--accent); color: #fff; padding: 0.75rem 2rem; border-radius: var(--radius-sm);
+  background: var(--accent); color: #fff; padding: 0.85rem 2rem; font-size: 0.95rem;
+  border-radius: var(--radius-sm);
 }
 nav .cta:hover { background: var(--accent-hover); }
 .menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; color: var(--accent); font-size: 1.5rem; }
@@ -305,6 +306,8 @@ h3 { font-size: 1.5rem; margin: 0 0 1rem; }
 .footer ul { list-style: none; padding: 0; margin: 0; color: #9ca3af; }
 .footer li { margin: 0.5rem 0; }
 .footer li:hover { color: var(--accent); cursor: default; }
+.footer a { color: var(--accent); text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
 .footer-bottom { border-top: 1px solid var(--dark-2); padding-top: 2rem; max-width: 80rem; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; color: #6b7280; font-size: 0.875rem; }
 
 /* Contact modal – formulaire Être rappelé */
