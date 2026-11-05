@@ -189,6 +189,7 @@ h3 { font-size: 1.5rem; margin: 0 0 1rem; }
 }
 .formations-grid .card:hover p { color: #e5e7eb; }
 .formations-grid .card .emoji { font-size: 2.5rem; margin-bottom: 1rem; }
+.formations-grid a.card { display: block; text-decoration: none; cursor: pointer; }
 
 /* Expertise split */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
